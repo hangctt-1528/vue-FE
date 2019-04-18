@@ -1,0 +1,1 @@
+docker run -it -p 8080:8080 --name vuejs -v /home/chu.thi.thuy.hang/Documents/vue-FE:/opt/app username/projectname npm run dev
