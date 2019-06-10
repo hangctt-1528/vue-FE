@@ -3,10 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import VueAxios from 'vue-axios'
+import VueAuth from '@websanova/vue-auth'
 import index from './backend/axios/index'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import VueResource from 'vue-resource'
+import auth from './Auth.js'
 
 Vue.config.productionTip = false
 
@@ -14,6 +18,7 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })
@@ -29,6 +34,11 @@ Vue.use(require('@websanova/vue-auth'), {
   router: require('@websanova/vue-auth/drivers/router/vue-router.2.x.js')
 })
 
+Vue.use(VueResource)
+
+Vue.component('example-component', require('./components/Home.vue'))
+
 App.router = Vue.router
+Vue.use(VueAuth, auth)
 
 new Vue(App).$mount('#app')

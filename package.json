@@ -15,16 +15,23 @@
     "serve": "node --version"
   },
   "dependencies": {
+    "@angular/common": "7.2.14",
+    "@angular/compiler": "7.2.14",
+    "@angular/core": "7.2.14",
+    "@angular/forms": "7.2.14",
     "@websanova/vue-auth": "^2.21.14-beta",
+    "api": "^1.0.0",
+    "api.js": "0.0.5",
     "axios": "^0.18.0",
     "bootstrap": "^4.3.1",
     "bootstrap-vue": "^2.0.0-rc.19",
-    "client-oauth2": "^4.2.3",
     "cors": "^2.8.5",
     "jquery": "^3.4.0",
     "popper.js": "^1.15.0",
-    "vue": "^2.5.2",
+    "utils": "^0.3.1",
+    "vue": "^2.6.10",
     "vue-axios": "^2.1.4",
+    "vue-resource": "^1.5.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -84,7 +91,7 @@
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.12.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-dev-server": "^3.3.1",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
